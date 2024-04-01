@@ -7,8 +7,8 @@ class Data(object):
         self.path = path
         self.batch_size = batch_size
 
-        train_file = path + '/train.txt'
-        test_file = path + '/test.txt'
+        train_file = path + '/train_1.txt'
+        test_file = path + '/test_1.txt'
         ui_file = path + '/user_item.txt'
 
         #get number of users and items
