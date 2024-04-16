@@ -9,16 +9,13 @@ def parse_args():
                         help='Input data path.')
     parser.add_argument('--model_name', type=str, default='crossvalidation',
                         help='Saved model name.')
-    parser.add_argument('--dataset', nargs='?', default='beibei',
-                        help='Choose a dataset from {gowalla, yelp2018, amazon-book}')
+    parser.add_argument('--dataset', nargs='?', default='beibei')
     parser.add_argument('--verbose', type=int, default=2,
                         help='Interval of evaluation.')
     parser.add_argument('--epoch', type=int, default=10000,
                         help='Number of epoch.')
     parser.add_argument('--user_split', type=int, default=0)
     parser.add_argument('--gat', type=int, default=0)
-    parser.add_argument('--hccf', type=int, default=0)
-    parser.add_argument('--dhcf', type=int, default=0)
     parser.add_argument('--lightgcn_iu', type=int, default=1)
     parser.add_argument('--hgcn', type=int, default=0)
     parser.add_argument('--pre_gcn', type=int, default=0)
